@@ -54,6 +54,15 @@ users = {
   }
 }
 
+emmanuel = {
+    "twitter": "eb8978",
+    "lottery_numbers": [5, 15, 28, 37, 41, 19],
+    "home_town": "Paris",
+    "pets": [
+        {"name": "Nala", "species": "dog"}
+    ]
+}
+
 # 1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
 print(users["Jonathan"]["twitter"])
 # 2. Get Erik's hometown
@@ -88,5 +97,5 @@ print (users["Erik"]["home_town"])
 users["Erik"]["pets"].append({"name": "fluffy", "species": "dog"})
 print (users["Erik"]["pets"])
 # 10. Add another person to the users dictionary
-users.append("Emmanuel")
+users.update({"Emmanuel": emmanuel})
 print(users)
