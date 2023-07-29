@@ -3,11 +3,15 @@
 numbers = [1, 6, 2, 2, 7, 1, 6, 13, 99, 7]
 
 # 1. Print out a list of the even integers:
-
+ordered_num = sorted(numbers)
+print(ordered_num)
 
 # 2. Print the difference between the largest and smallest value:
+largest_num = sorted(numbers, reverse=True)[:1]
+smallest_num = ordered_num[:1]
 
-
+diff = numbers.substract(largest_num + smallest_num)
+print(diff)
 # 3. Print True if the list contains a 2 next to a 2 somewhere.
 
 
