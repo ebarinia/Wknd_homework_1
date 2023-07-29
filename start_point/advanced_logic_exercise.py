@@ -7,11 +7,11 @@ ordered_num = sorted(numbers)
 print(ordered_num)
 
 # 2. Print the difference between the largest and smallest value:
-largest_num = sorted(numbers, reverse=True)[:1]
-smallest_num = ordered_num[:1]
+largest_num = sorted(numbers, reverse=True)[0]
+smallest_num = ordered_num[0]
 
-diff = numbers.substract(largest_num + smallest_num)
-print(diff)
+print(largest_num - smallest_num)
+
 # 3. Print True if the list contains a 2 next to a 2 somewhere.
 
 
