@@ -2,18 +2,25 @@
 
 numbers = [1, 6, 2, 2, 7, 1, 6, 13, 99, 7]
 
-# 1. Print out a list of the even integers:
-ordered_num = sorted(numbers)
-print(ordered_num)
+# # 1. Print out a list of the even integers:
+# ordered_num = sorted(numbers)
+# print(ordered_num)
 
-# 2. Print the difference between the largest and smallest value:
-largest_num = sorted(numbers, reverse=True)[0]
-smallest_num = ordered_num[0]
+# # 2. Print the difference between the largest and smallest value:
+# largest_num = sorted(numbers, reverse=True)[0]
+# smallest_num = ordered_num[0]
 
-print(largest_num - smallest_num)
+# print(largest_num - smallest_num)
 
-# 3. Print True if the list contains a 2 next to a 2 somewhere.
+# # 3. Print True if the list contains a 2 next to a 2 somewhere.
+identical = False
 
+for number in range(len(numbers)):
+    print(numbers[number])
+    for two in number:
+        if two == number:
+            identical = True
+print(identical)
 
 # 4. Print the sum of the numbers, 
 #    BUT ignore any section of numbers starting with a 6 and extending to the next 7.
